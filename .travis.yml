@@ -30,3 +30,4 @@ addons:
     paths:
       - ./build/logs
     debug: true
+    target_paths: skeleton
