@@ -18,3 +18,14 @@ before_script:
 script: ./vendor/bin/phpunit --configuration config/phpunit.xml.dist
 
 after_script: ./bin/scrutinizer.sh
+
+env:
+  - secure: "VlyLno8IpT5fnrN8SasxNdivkxrkiDuP7fxSzbh0uI7tIe0HQ+6dEGCLV4OwXDb14YiO1zlAeobbuwhqYk/w7NoDKWlH1UMTGDl4MWKU79zrHOVsCVWnYC7KoIdnOBbX80Aw+05RN42A+oNCyY+wUcF66Ly7fsDblnmCrPLurvs="
+  - secure: "BOch1TkMPuWCpk9iVhI9UTV/o/o+R/YUq54XjNPJpbEGt+1OH3veWxl7HZnu+8lscnracV4vgtzcX/IzuzW1mmfXMcNqw2MikWxv9q51RiuvdaPynh1M0WD7EJ8fSqrm74tOnnmTqOGnn6erAQ1Bt6OIpr4nHic5RNp8yIJx+Zo="
+  - secure: "FNlU2yuTZ2hfHt2YzBRtyTSiIyaqK9EXw15uOXyAwL89prrIStFPfxR30u7DIaurvbTwKFHyqD2S4poNLiPj6ZPnvEjffEK5OVFLIE8JsRVH7Twi4MpY1Q/TkIY8J/af6H+7b99t4M4uD4adUOVnG1yI+L2ehiltWAU+Tw6FZFo="
+
+addons:
+  artifacts:
+    paths:
+      - $HOME/build/logs
+    debug: true
