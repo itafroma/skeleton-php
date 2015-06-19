@@ -29,5 +29,4 @@ addons:
   artifacts:
     paths:
       - ./build/logs
-    debug: true
-    target_paths: skeleton
+    target_paths: .
